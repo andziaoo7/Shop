@@ -2,6 +2,7 @@ div {
 	border: solid #bfb8af;
 	height: 100px;
 	width: 100%;
+	box-sizing: border-box;
 }
 #navigation {
 	height: 30px;
@@ -84,6 +85,7 @@ td {
 td img {
 	height: 300px;
 	width: 400px;
+	border-radius: 20px;
 	box-shadow: none;
 	position: relative;
 	font-family: Lobster;
