@@ -1,0 +1,47 @@
+div {
+	border: solid black;
+	height: 100px;
+	width: 100%;
+}
+#navigation {
+	height: 30px;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #bfb8af;
+	text-align: left;
+	padding-bottom: 9px;
+}
+#hero {
+	height: 200px;
+	width: 100%;
+	background:
+	url(http://s29.postimg.org/6e6w4j19j/background2.jpg);
+	background-position: center;
+	position: relative;
+}
+#logo {
+	font-family: Lobster;
+	font-size: 50px;
+	color: white;
+	text-align: center left;
+}
+#title {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#titletext {
+	text-align: center;
+	font-family: Verdana;
+
+}
+#footer {
+	height: 60px;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
