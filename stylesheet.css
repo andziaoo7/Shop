@@ -62,8 +62,7 @@ div {
 #title2 {
 	margin-top: -17px;
 	padding-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
 }
 table {
 	border: #bfb8af 2px solid;
@@ -71,6 +70,7 @@ table {
 	float: center;
 	height: 500px;
 	width: 100%;
+	position: relative;
 }
 
 td {
@@ -84,8 +84,8 @@ td img {
 	box-shadow: none;
 	position: relative;
 }
-#footer {
-	height: 100px;
+footer {
+	height: 120px;
 	width: 100%;
 	margin-top: 3px;
 	border-bottom-left-radius: 10px;
@@ -95,4 +95,30 @@ td img {
 	font-family: Lobster;
 	font-style: italic;
 	font-size: 15px;
+	display: inline-block;
+	position: relative;
+}
+#address {
+	height: 90px;
+	width: 20%;
+	float: left;
+	padding-left: 20px;
+	padding-top: -10px;
+}
+#contact {
+	height: 90px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	
+}
+#socialmedia {
+	height: 40px;
+	width: 40%;
+	display: inline-block;
+	float: right;
+	padding-top: 7px;
+	margin-right: -190px;
+	border: none;
 }
