@@ -35,6 +35,9 @@ div {
 	background-size: 100%;
 	padding-top: 150px;
 	position: relative;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	border-color: #404040;
 }
 #logo {
 	font-family: Lobster;
@@ -56,11 +59,7 @@ div {
 	margin-top: -70px;	
 	margin-right: auto;
 }
-ul {
-	display: block;
-	float: left;
-}
-li {
+#productmenu {
 	list-style-type: none;
 	font-family: Lobster;
 	font-size: 20px;
@@ -77,14 +76,15 @@ h2 {
 	padding-bottom: -10px;
 }
 #categories {
-	height: 350px;
+	height: 500px;
 	width: 100%;
 	background-color: #66cdaa;
 	box-sizining: border-box;
 	text-align: center;
+	display: inline-block;
 }
 #leftside {
-	height: 350px;
+	height: 400px;
 	width: 20%;
 	float: left;
 	background-color: #66cdaa;
@@ -96,12 +96,65 @@ h2 {
 	padding-top: -50px;
 }
 #rightside {
-	height: 350px;
+	height: 400px;
 	width: 80%;
 	float: right;
 	background-color: #66cdaa;
 }
-
+#can1 {
+	height: 160px;
+	width: 320px;
+	float: left;
+	list-style-type: none;
+	display: inline-block;
+	background:
+	url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpSohvVxEYsLkoOb51R-mD0I-ZC352kz7FBf8gZhGI0A1B6r8m);
+}
+#can2 {
+	height: 130px;
+	width: 240px;
+	list-style-type: none;
+	display: inline-block;
+	clear: both;
+	background:
+	url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiriEZIwnZ_URzVYX_J1BGACEYXDYiK1IJqEzLJp5OPe0G5Zj);
+}
+#can3 {
+	height: 150px;
+	width: 220px;
+	float: right;
+	list-style-type: none;
+	display: inline-block;
+	background:
+	url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRzubMhneihjipkOQER3njWWDafiDJQS2UQfwxC9UHpXNMxfL);
+}
+#can4 {
+	height: 200px;
+	width: 228px;
+	float: left;
+	list-style-type: none;
+	display: inline-block;
+	background:
+	url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8fjAsejzA4IkcRfikYmJdy5tvH9OZAy3r7Xhpn7wlqugYS0lI);
+}
+#can5 {
+	height: 220px;
+	width: 200px;
+	list-style-type: none;
+	display: inline-block;
+	clear: both;
+	background:
+	url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDDfrbYUqTf3P0LNISNyUhDj7hAWyEt-Ctw2kMErWTeu-k4JXMAQ);
+}
+#can6 {
+	height: 200px;
+	width: 170px;
+	float: right;
+	list-style-type: none;
+	display: inline-block;
+	background:
+	url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6SxxEaOxNvSCSCl1Zudb6ImuoLw41m0tYbyzhneuwTuZEGE9zew);
+}
 footer {
 	height: 120px;
 	width: 100%;
