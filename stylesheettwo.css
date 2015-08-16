@@ -1,16 +1,23 @@
 div {
-	border: solid #bfb8af;
+	border: none;
 	height: 100px;
 	width: 100%;
+	box-sizing: border-box;
 }
 #navigation {
 	height: 30px;
 	width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	background-color: #bfb8af;
+	background-color: #66cdaa;
 	text-align: left;
-	padding-bottom: 9px;
+	padding-bottom: -10px;
+	color: #404040;
+}
+#footprint {
+	height: 25px;
+	width: 30px;
+	padding-top: -10px;
 }
 #mainpage {
 	font-family: Lobster;
@@ -20,20 +27,22 @@ div {
 	margin-left: 10px;
 }
 #hero {
-	height: 200px;
+	height: 400px;
 	width: 100%;
 	background:
-	url(http://s29.postimg.org/6e6w4j19j/background2.jpg);
-	background-position: center;
+	url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+	background-position: center center;
+	background-size: 100%;
+	padding-top: 150px;
 	position: relative;
 }
 #logo {
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: black;
+	color: white;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 90px;
 	margin-top: -5px;
 	width: 100%;
 }
@@ -41,62 +50,71 @@ div {
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: black;
+	color: white;
 	text-align: left;
-	margin-left: 130px;
-	margin-top: -95px;	
+	margin-left: 200px;
+	margin-top: -70px;	
 	margin-right: auto;
 }
-#title {
-	height: 30px;
-	width: 100%;
-	text-align: center;
+ul {
+	display: block;
+	float: left;
+}
+li {
+	list-style-type: none;
 	font-family: Lobster;
 	font-size: 20px;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #bfb8af;
-	margin-top: 3px;
-	padding-top: 5px;
+	color: #404040;
+	text-align: center;
+	padding-left: 25px;
+	padding-top: 18px;
 }
-#title2 {
-	width: 100%;
-	margin-top: -17px;
-	padding-top: 5px;
-	position: relative;
+h2 {
+	font-family: Lobster;
+	font-size: 18px;
+	color: #404040;
+	text-align: center;
+	padding-bottom: -10px;
 }
-#heart {
-	height: 500px;
+#categories {
+	height: 350px;
 	width: 100%;
-	border: #bfb8af;
-	display: inline-block;
-	background-color: white;
+	background-color: #66cdaa;
+	box-sizining: border-box;
+	text-align: center;
 }
 #leftside {
-	height: 500px;
-	width: 30%;
+	height: 350px;
+	width: 20%;
 	float: left;
-	margin-right: 1px;
+	background-color: #66cdaa;
+	font-family: Lobster;
+	border-right: solid 1px;
+	border-color: #404040;
+	text-align: center;
+	padding-left: 10px;
+	padding-top: -50px;
 }
 #rightside {
-	height: 500px;
-	width: 68%;
+	height: 350px;
+	width: 80%;
 	float: right;
+	background-color: #66cdaa;
 }
 
 footer {
 	height: 120px;
 	width: 100%;
-	margin-top: 5px;
-	margin-right: 10px;
+	border-top: solid 1px;
+	border-color: #404040;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	background-color: #bfb8af;
+	background-color: #66cdaa;
 	clear: both;
 	font-family: Lobster;
 	font-style: italic;
 	font-size: 15px;
+	color: #404040;
 	display: inline-block;
 	position: relative;
 }
@@ -115,12 +133,12 @@ footer {
 	padding-top: 10px;
 	
 }
-#socialmedia {
-	height: 40px;
-	width: 40%;
+#facebook {
+	height: 90px;
+	width: 20%;
 	display: inline-block;
 	float: right;
-	padding-top: 7px;
-	margin-right: -190px;
+	margin-top: -70px;
+	margin-right: 20px;
 	border: none;
 }
