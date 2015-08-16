@@ -138,8 +138,35 @@ h3 {
 	background:
 	url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png);
 }
-h3 :hover {
-	text-decoration: underline;
+#wetfood :hover {
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
+}
+#dryfood :hover{
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
+}
+#treats :hover {
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
+}
+#litter :hover {
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
+}
+#accessories :hover {
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
+}
+#beds :hover {
+	background-clip: content-box;
+	background-color: white;
+	border-radius: 10px;
 }
 footer {
 	height: 120px;
