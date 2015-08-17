@@ -4,7 +4,7 @@ div {
 	width: 100%;
 	box-sizing: border-box;
 }
-#navigation {
+nav {
 	height: 30px;
 	width: 100%;
 	border-top-left-radius: 10px;
@@ -13,6 +13,7 @@ div {
 	text-align: left;
 	padding-bottom: -10px;
 	color: #404040;
+	list-style-type: none;
 }
 #footprint {
 	height: 25px;
@@ -27,6 +28,7 @@ div {
 	text-align: left;
 	margin-top: 9px;
 	margin-left: 10px;
+	display: inline;
 }
 #hero {
 	height: 400px;
@@ -73,6 +75,7 @@ div {
 	line-height: 50px;
 	background-color: #66cdaa;
 	margin: 0;
+	height: 100%;
 }
 h2 {
 	font-family: Lobster;
@@ -83,6 +86,7 @@ h2 {
 	box-sizining: border-box;
 }
 #categories {
+	height: 100%;
 	width: 100%;
 	background-color: #66cdaa;
 	box-sizining: border-box;
@@ -90,6 +94,7 @@ h2 {
 	display: block;
 }
 #leftside {
+	height: 100%;
 	width: 20%;
 	float: left;
 	background-color: #66cdaa;

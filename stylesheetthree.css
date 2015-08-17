@@ -1,16 +1,26 @@
 div {
-	border: solid #bfb8af;
+	border: none;
 	height: 100px;
 	width: 100%;
+	box-sizing: border-box;
 }
-#navigation {
+nav {
 	height: 30px;
 	width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	background-color: #bfb8af;
+	background-color: #66cdaa;
 	text-align: left;
-	padding-bottom: 9px;
+	padding-bottom: -10px;
+	color: #404040;
+	list-style-type: none;
+}
+#footprint {
+	height: 25px;
+	width: 30px;
+	padding-top: -10px;
+	border: none;
+	display: inline;
 }
 #mainpage {
 	font-family: Lobster;
@@ -18,22 +28,28 @@ div {
 	text-align: left;
 	margin-top: 9px;
 	margin-left: 10px;
+	display: inline;
 }
 #hero {
-	height: 200px;
+	height: 400px;
 	width: 100%;
 	background:
-	url(http://s29.postimg.org/6e6w4j19j/background2.jpg);
-	background-position: center;
+	url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+	background-position: center center;
+	background-size: 100%;
+	padding-top: 150px;
 	position: relative;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	border-color: #404040;
 }
 #logo {
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: black;
+	color: white;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 90px;
 	margin-top: -5px;
 	width: 100%;
 }
@@ -41,48 +57,61 @@ div {
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: black;
+	color: white;
 	text-align: left;
-	margin-left: 130px;
-	margin-top: -95px;	
+	margin-left: 200px;
+	margin-top: -70px;	
 	margin-right: auto;
 }
-#title {
-	height: 30px;
-	width: 100%;
+#leftside {
+	float: left;
+	padding-left: -50%;
+	width: 40%;
+	background-color: #66cdaa;
+	border-right: solid 1px;
+	border-color: #404040;
+	display: inline-block;
+}
+img {
+	height: 40%;
+	width: 50%;
+	display: block;
+	box-sizining: border-box;
+
+}
+#rightside {
+	float: right;
+	width: 60%;
 	text-align: center;
+	background-color: #66cdaa;
+}
+h4 {
 	font-family: Lobster;
+	font-size: 15px;
+	color: #404040;
+}
+h2 {
+	font-family: solid Lobster;
 	font-size: 20px;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #bfb8af;
-	margin-top: 3px;
-	padding-top: 5px;
+	color: #404040;
+	text-align: center;
 }
-#title2 {
-	width: 100%;
-	margin-top: -17px;
-	padding-top: 5px;
-	position: relative;
-}
-
-
-
-
 footer {
 	height: 120px;
 	width: 100%;
-	margin-top: 3px;
+	border-top: solid 1px;
+	border-color: #404040;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	background-color: #bfb8af;
+	background-color: #66cdaa;
 	clear: both;
 	font-family: Lobster;
 	font-style: italic;
 	font-size: 15px;
+	color: #404040;
 	display: inline-block;
 	position: relative;
+	margin: 0;
 }
 #address {
 	height: 90px;
@@ -99,12 +128,12 @@ footer {
 	padding-top: 10px;
 	
 }
-#socialmedia {
-	height: 40px;
-	width: 40%;
+#facebook {
+	height: 90px;
+	width: 20%;
 	display: inline-block;
 	float: right;
-	padding-top: 7px;
-	margin-right: -190px;
+	margin-top: -70px;
+	margin-right: 20px;
 	border: none;
 }
