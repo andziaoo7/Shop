@@ -21,6 +21,8 @@ nav {
 	padding-top: -10px;
 	border: none;
 	display: inline;
+	padding-left: 0;
+	padding-right: 0;
 }
 #mainpage {
 	font-family: Lobster;
@@ -76,6 +78,19 @@ nav {
 	background-color: #66cdaa;
 	margin: 0;
 	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: #404040;
+	font-family: Lobster;
+}
+a :hover {
+	background-clip: content-box;
+	background-color: white;
+}
+#productmenu :hover {
+	background-clip: content-box;
+	background-color: white;
 }
 h2 {
 	font-family: Lobster;

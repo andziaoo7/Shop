@@ -21,6 +21,8 @@ nav {
 	padding-top: -10px;
 	border: none;
 	display: inline;
+	padding-left: 0;
+	padding-right: 0;
 }
 #mainpage {
 	font-family: Lobster;
@@ -110,6 +112,8 @@ h3 {
 }
 a {
 	text-decoration: none;
+	color: #404040;
+	font-family: Lobster;
 }
 #wetfood {
 	width: 200px;

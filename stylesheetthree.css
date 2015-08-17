@@ -15,20 +15,22 @@ nav {
 	color: #404040;
 	list-style-type: none;
 }
-#footprint {
+nav ul #footprint {
 	height: 25px;
 	width: 30px;
 	padding-top: -10px;
 	border: none;
 	display: inline;
+	padding-left: 0;
+	padding-right: 0;
 }
 #mainpage {
 	font-family: Lobster;
 	font-style: italic;
 	text-align: left;
 	margin-top: 9px;
-	margin-left: 10px;
 	display: inline;
+	padding-left: -20px;
 }
 #hero {
 	height: 400px;
@@ -63,41 +65,82 @@ nav {
 	margin-top: -70px;	
 	margin-right: auto;
 }
+section {
+	box-sizining: border-box;
+	background-color: #66cdaa;
+}
 #leftside {
 	float: left;
 	padding-left: -50%;
-	width: 40%;
+	width: 30%;
+	height: 100%;
 	background-color: #66cdaa;
 	border-right: solid 1px;
 	border-color: #404040;
+	padding-top: 10px;
 	display: inline-block;
+	text-align: center;
 }
 img {
 	height: 40%;
 	width: 59%;
 	display: block;
+	padding-left: 80px;
+	padding-right: 20px;
+	text-align: center;
 }
 #smallimage {
 	height: 20%;
 	width: 19%;
 	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	text-align: center;
 }
 #rightside {
 	float: right;
 	width: 60%;
+	display: inline-block;
 	text-align: center;
 	background-color: #66cdaa;
 }
-h4 {
+li {
 	font-family: Lobster;
 	font-size: 15px;
 	color: #404040;
+	display: block;
+	padding-top: 5px;
+	padding-left: 20px;
+	line-height: 45px;
+	text-align: center;
 }
 h2 {
 	font-family: solid Lobster;
 	font-size: 20px;
 	color: #404040;
 	text-align: center;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+h3 {
+	font-family: solid Lobster;
+	font-size: 25px;
+	color: #404040;
+	text-align: right;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	padding-right: 60px;
+
+}
+a {
+	text-decoration: none;
+	color: #404040;
+	font-family: Lobster;
+}
+a :hover {
+
 }
 #recommendation {
 	display: inline-block;
@@ -112,6 +155,9 @@ h2 {
 	height: 40%;
 	width: 10%;
 	display: inline-block;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 10px;
 
 }
 footer {
