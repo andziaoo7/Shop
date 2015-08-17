@@ -18,7 +18,6 @@ nav {
 nav ul #footprint {
 	height: 25px;
 	width: 30px;
-	padding-top: -10px;
 	border: none;
 	display: inline;
 	padding-left: 0;
@@ -29,8 +28,8 @@ nav ul #footprint {
 	font-style: italic;
 	text-align: left;
 	margin-top: 9px;
+	margin-left: 10px;
 	display: inline;
-	padding-left: -20px;
 }
 #hero {
 	height: 400px;
@@ -105,15 +104,16 @@ img {
 	text-align: center;
 	background-color: #66cdaa;
 }
-li {
+#about {
 	font-family: Lobster;
 	font-size: 15px;
 	color: #404040;
 	display: block;
 	padding-top: 5px;
-	padding-left: 20px;
-	line-height: 45px;
-	text-align: center;
+	padding-left: 0px;
+	line-height: 40px;
+	text-align: left;
+	list-style-type: circle;
 }
 h2 {
 	font-family: solid Lobster;
@@ -138,9 +138,6 @@ a {
 	text-decoration: none;
 	color: #404040;
 	font-family: Lobster;
-}
-a :hover {
-
 }
 #recommendation {
 	display: inline-block;

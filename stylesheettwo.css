@@ -97,7 +97,7 @@ h2 {
 	font-size: 18px;
 	color: #404040;
 	text-align: center;
-	padding-bottom: -20px;
+	padding-top: 37px;
 	box-sizining: border-box;
 }
 #categories {
@@ -116,13 +116,22 @@ h2 {
 	font-family: Lobster;
 	border-right: solid 1px;
 	border-color: #404040;
-	text-align: center;
 }
+#productmenu {
+	height: 100%;
+	width: 20%;
+	background-color: #66cdaa;
+	font-family: Lobster;
+	text-align: center;
+	display: inline;
+}
+
 #rightside {
 	width: 80%;
 	float: right;
 	background-color: #66cdaa;
 	display: inline-block;
+	margin-bottom: 0;
 }
 img {
 	height: 50%;
