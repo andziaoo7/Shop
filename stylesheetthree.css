@@ -74,10 +74,13 @@ nav {
 }
 img {
 	height: 40%;
-	width: 50%;
+	width: 59%;
 	display: block;
-	box-sizining: border-box;
-
+}
+#smallimage {
+	height: 20%;
+	width: 19%;
+	display: inline-block;
 }
 #rightside {
 	float: right;
@@ -95,6 +98,21 @@ h2 {
 	font-size: 20px;
 	color: #404040;
 	text-align: center;
+}
+#recommendation {
+	display: inline-block;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	background-color: #66cdaa;
+	border-top: solid 1px;
+	border-color: #404040;
+}
+#recommendation img {
+	height: 40%;
+	width: 10%;
+	display: inline-block;
+
 }
 footer {
 	height: 120px;
