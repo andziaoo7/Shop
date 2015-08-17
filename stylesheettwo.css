@@ -19,6 +19,7 @@ div {
 	width: 30px;
 	padding-top: -10px;
 	border: none;
+	display: inline;
 }
 #mainpage {
 	font-family: Lobster;
@@ -67,26 +68,28 @@ div {
 	color: #404040;
 	text-align: center;
 	padding-left: 25px;
-	padding-top: 18px;
-	display: inline;
+	padding-top: 0px;
+	display: block;
+	line-height: 50px;
+	background-color: #66cdaa;
+	margin: 0;
 }
 h2 {
 	font-family: Lobster;
 	font-size: 18px;
 	color: #404040;
 	text-align: center;
-	padding-bottom: -10px;
+	padding-bottom: -20px;
+	box-sizining: border-box;
 }
 #categories {
-	height: 500px;
 	width: 100%;
 	background-color: #66cdaa;
 	box-sizining: border-box;
 	text-align: center;
-	display: inline-block;
+	display: block;
 }
 #leftside {
-	height: 300px;
 	width: 20%;
 	float: left;
 	background-color: #66cdaa;
@@ -94,38 +97,43 @@ h2 {
 	border-right: solid 1px;
 	border-color: #404040;
 	text-align: center;
-	padding-left: 10px;
-	padding-top: -50px;
 }
 #rightside {
-	height: 300px;
 	width: 80%;
 	float: right;
 	background-color: #66cdaa;
 	display: inline-block;
 }
 img {
-	height: 100%;
-	width: 100%;
-	display: inline-block;
-	box-sizining: border-box;
-	border: solid 2px;
-	border-color: #404040;
+	height: 50%;
+	width: 70%;
+	display: block;
+	border-bottom-right-radius: 15px;
 	position: relative;
+	box-sizining: border-box;
 }
 section ul li {
 	list-style-type: none;
 	display: inline-block;
+	position: relative;
+	padding: 0;
+	width: 30%;
+	height: 10%;
 }
 h4 {
 	font-size: 15px;
-	font-family: Lobster;
+	font-family: solid Lobster;
 	color: #404040;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	top: 50%;
+	border: 1px #404040;
+	margin: 0;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-bottom-right-radius: 15px;
+	width: 70%;
 }
 footer {
 	height: 120px;
@@ -142,6 +150,7 @@ footer {
 	color: #404040;
 	display: inline-block;
 	position: relative;
+	margin: 0;
 }
 #address {
 	height: 90px;
