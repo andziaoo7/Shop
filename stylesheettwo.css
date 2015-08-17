@@ -18,6 +18,7 @@ div {
 	height: 25px;
 	width: 30px;
 	padding-top: -10px;
+	border: none;
 }
 #mainpage {
 	font-family: Lobster;
@@ -67,6 +68,7 @@ div {
 	text-align: center;
 	padding-left: 25px;
 	padding-top: 18px;
+	display: inline;
 }
 h2 {
 	font-family: Lobster;
@@ -84,7 +86,7 @@ h2 {
 	display: inline-block;
 }
 #leftside {
-	height: 400px;
+	height: 300px;
 	width: 20%;
 	float: left;
 	background-color: #66cdaa;
@@ -96,64 +98,34 @@ h2 {
 	padding-top: -50px;
 }
 #rightside {
-	height: 400px;
+	height: 300px;
 	width: 80%;
 	float: right;
 	background-color: #66cdaa;
+	display: inline-block;
 }
-#can1 {
-	height: 160px;
-	width: 320px;
-	float: left;
+img {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	box-sizining: border-box;
+	border: solid 2px;
+	border-color: #404040;
+	position: relative;
+}
+section ul li {
 	list-style-type: none;
 	display: inline-block;
-	background:
-	url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpSohvVxEYsLkoOb51R-mD0I-ZC352kz7FBf8gZhGI0A1B6r8m);
 }
-#can2 {
-	height: 130px;
-	width: 240px;
-	list-style-type: none;
-	display: inline-block;
-	clear: both;
-	background:
-	url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiriEZIwnZ_URzVYX_J1BGACEYXDYiK1IJqEzLJp5OPe0G5Zj);
-}
-#can3 {
-	height: 150px;
-	width: 220px;
-	float: right;
-	list-style-type: none;
-	display: inline-block;
-	background:
-	url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRzubMhneihjipkOQER3njWWDafiDJQS2UQfwxC9UHpXNMxfL);
-}
-#can4 {
-	height: 200px;
-	width: 228px;
-	float: left;
-	list-style-type: none;
-	display: inline-block;
-	background:
-	url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8fjAsejzA4IkcRfikYmJdy5tvH9OZAy3r7Xhpn7wlqugYS0lI);
-}
-#can5 {
-	height: 220px;
-	width: 200px;
-	list-style-type: none;
-	display: inline-block;
-	clear: both;
-	background:
-	url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDDfrbYUqTf3P0LNISNyUhDj7hAWyEt-Ctw2kMErWTeu-k4JXMAQ);
-}
-#can6 {
-	height: 200px;
-	width: 170px;
-	float: right;
-	list-style-type: none;
-	display: inline-block;
-	background:
-	url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6SxxEaOxNvSCSCl1Zudb6ImuoLw41m0tYbyzhneuwTuZEGE9zew);
+h4 {
+	font-size: 15px;
+	font-family: Lobster;
+	color: #404040;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 50%;
 }
 footer {
 	height: 120px;
