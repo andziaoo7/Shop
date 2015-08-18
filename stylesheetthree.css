@@ -1,8 +1,9 @@
 div {
-	border: none;
-	height: 100px;
-	width: 100%;
 	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lobster;
+	color: #404040;
 }
 nav {
 	height: 30px;
@@ -13,73 +14,58 @@ nav {
 	text-align: left;
 	padding-bottom: -10px;
 	color: #404040;
-	list-style-type: none;
 }
-nav ul #footprint {
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	font-style: italic;
+}
+.footprint {
 	height: 25px;
 	width: 30px;
+	padding-top: -10px;
 	border: none;
 	display: inline;
 	padding-left: 0;
 	padding-right: 0;
 }
-#mainpage {
-	font-family: Lobster;
-	font-style: italic;
-	text-align: left;
-	margin-top: 9px;
-	margin-left: 10px;
-	display: inline;
-}
-#hero {
-	height: 400px;
-	width: 100%;
-	background:
-	url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+.hero {
+	background-image: url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 100%;
-	padding-top: 150px;
+	background-size: cover;
 	position: relative;
 	border-bottom: solid 1px;
 	border-top: solid 1px;
 	border-color: #404040;
 }
-#logo {
+.hero h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 80px 30px;
+	padding-top: 120px;
+	padding-left: 160px;
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 90px;
-	margin-top: -5px;
-	width: 100%;
-}
-#logo2 {
-	font-family: Lobster;
-	font-size: 70px;
-	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 200px;
-	margin-top: -70px;	
-	margin-right: auto;
+	color: #fff;
+	text-align: right;
 }
 section {
 	box-sizining: border-box;
 	background-color: #66cdaa;
 	height: 100%;
 }
-#leftside {
+.leftside {
 	float: left;
 	padding-left: -50%;
 	width: 30%;
-	height: 100%;
 	background-color: #66cdaa;
 	padding-top: 10px;
 	display: inline-block;
 	text-align: center;
 }
-img {
+.leftside img {
 	height: 40%;
 	width: 59%;
 	display: block;
@@ -87,24 +73,32 @@ img {
 	padding-right: 20px;
 	text-align: center;
 }
-#smallimage {
-	height: 20%;
-	width: 19%;
+.leftside ul li {
+	height: 40%;
+	width: 30%;
 	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0;
+	padding-right: 0;
 	padding-top: 10px;
 	text-align: center;
+	list-style-type: none;
 }
-#rightside {
+.rightside {
 	float: right;
 	width: 60%;
-	height: 100%;
 	display: inline-block;
 	text-align: center;
 	background-color: #66cdaa;
 }
-#about {
+.rightside h2 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 0;
+}
+.rightside ul {
+	list-style-type: none;
+}
+.rightside li {
 	font-family: Lobster;
 	font-size: 15px;
 	color: #404040;
@@ -114,22 +108,10 @@ img {
 	text-align: left;
 	list-style-type: circle;
 }
-h2 {
-	font-family: solid Lobster;
-	font-size: 20px;
-	color: #404040;
-	text-align: center;
-	margin: 0;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
 h3 {
-	font-family: solid Lobster;
 	font-size: 25px;
-	color: #404040;
 	text-align: right;
-	margin-bottom: 0;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	padding-right: 60px;
 }
 a {
@@ -154,7 +136,7 @@ a {
 	padding-left: 40px;
 	padding-bottom: 10px;
 }
-footer {
+.site-footer {
 	height: 120px;
 	width: 100%;
 	border-top: solid 1px;
@@ -169,29 +151,30 @@ footer {
 	color: #404040;
 	display: inline-block;
 	position: relative;
-	margin: 0;
 }
-#address {
+.address {
 	height: 90px;
 	width: 20%;
 	float: left;
 	padding-left: 20px;
 	padding-top: -10px;
 }
-#contact {
+.contact {
 	height: 90px;
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 	padding-top: 10px;
+	
 }
-#facebook {
+.facebook {
 	height: 90px;
 	width: 20%;
 	display: inline-block;
 	float: right;
 	margin-top: -70px;
-	margin-right: 0;
+	margin-right: 20px;
 	border: none;
+	border-radius: 0;
 	border-bottom-right-radius: 10px;
 }

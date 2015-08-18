@@ -1,8 +1,9 @@
 div {
-	border: none;
-	height: 100px;
-	width: 100%;
 	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lobster;
+	color: #404040;
 }
 nav {
 	height: 30px;
@@ -13,9 +14,14 @@ nav {
 	text-align: left;
 	padding-bottom: -10px;
 	color: #404040;
-	list-style-type: none;
 }
-#footprint {
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	font-style: italic;
+
+}
+.footprint {
 	height: 25px;
 	width: 30px;
 	padding-top: -10px;
@@ -24,46 +30,27 @@ nav {
 	padding-left: 0;
 	padding-right: 0;
 }
-#mainpage {
-	font-family: Lobster;
-	font-style: italic;
-	text-align: left;
-	margin-top: 9px;
-	margin-left: 10px;
-	display: inline;
-}
-#hero {
-	height: 400px;
-	width: 100%;
-	background:
-	url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+.hero {
+	background-image: url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 100%;
-	padding-top: 150px;
+	background-size: cover;
 	position: relative;
 	border-bottom: solid 1px;
 	border-top: solid 1px;
 	border-color: #404040;
 }
-#logo {
+.hero h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 80px 30px;
+	padding-top: 120px;
+	padding-left: 160px;
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 90px;
-	margin-top: -5px;
-	width: 100%;
-}
-#logo2 {
-	font-family: Lobster;
-	font-size: 70px;
-	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 200px;
-	margin-top: -70px;	
-	margin-right: auto;
+	color: #fff;
+	text-align: right;
 }
 #productmenu {
 	list-style-type: none;
@@ -164,7 +151,7 @@ h4 {
 	border-bottom-right-radius: 15px;
 	width: 70%;
 }
-footer {
+.site-footer {
 	height: 120px;
 	width: 100%;
 	border-top: solid 1px;
@@ -179,16 +166,15 @@ footer {
 	color: #404040;
 	display: inline-block;
 	position: relative;
-	margin: 0;
 }
-#address {
+.address {
 	height: 90px;
 	width: 20%;
 	float: left;
 	padding-left: 20px;
 	padding-top: -10px;
 }
-#contact {
+.contact {
 	height: 90px;
 	width: 50%;
 	display: inline-block;
@@ -196,7 +182,7 @@ footer {
 	padding-top: 10px;
 	
 }
-#facebook {
+.facebook {
 	height: 90px;
 	width: 20%;
 	display: inline-block;

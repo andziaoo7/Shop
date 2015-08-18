@@ -1,8 +1,9 @@
 div {
-	border: none;
-	height: 100px;
-	width: 100%;
 	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lobster;
+	color: #404040;
 }
 nav {
 	height: 30px;
@@ -13,9 +14,13 @@ nav {
 	text-align: left;
 	padding-bottom: -10px;
 	color: #404040;
-	list-style-type: none;
 }
-#footprint {
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	font-style: italic;
+}
+.footprint {
 	height: 25px;
 	width: 30px;
 	padding-top: -10px;
@@ -24,168 +29,97 @@ nav {
 	padding-left: 0;
 	padding-right: 0;
 }
-#mainpage {
-	font-family: Lobster;
-	font-style: italic;
-	text-align: left;
-	margin-top: 9px;
-	margin-left: 10px;
-	display: inline;
-}
-#hero {
-	height: 400px;
-	width: 100%;
-	background:
-	url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+.hero {
+	background-image: url(http://7-themes.com/data_images/out/69/7007327-cute-lazy-cat.jpg);
+	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 100%;
-	padding-top: 150px;
+	background-size: cover;
 	position: relative;
 	border-bottom: solid 1px;
 	border-top: solid 1px;
 	border-color: #404040;
 }
-#logo {
+.hero h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 80px 30px;
+	padding-top: 120px;
+	padding-left: 160px;
 	font-family: Lobster;
 	font-size: 70px;
 	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 90px;
-	margin-top: -5px;
-	width: 100%;
+	color: #fff;
+	text-align: right;
 }
-#logo2 {
-	font-family: Lobster;
-	font-size: 70px;
-	font-style: italic;
-	color: white;
-	text-align: left;
-	margin-left: 200px;
-	margin-top: -70px;	
-	margin-right: auto;
-}
-#title {
-	height: 30px;
-	width: 100%;
-	text-align: center;
-	padding-top: 7px;
-	font-family: Lobster;
-	font-size: 20px;
-	color: #404040;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #66cdaa;
-}
-#table {
+.table {
 	border: #66cdaa 2px solid;
 	background-color: #66cdaa;
-	float: center;
-	display: inline-block;
-	height: 450px;
-	width: 100%;
 	position: relative;
 	text-align: center;
-	padding-left: 70px;
-	padding-right: 70px;
+	padding: 15px 70px 30px;
 }
-img {
-	height: 300px;
-	width: 400px;
-	border-radius: 20px;
-	box-shadow: none;
-	position: relative;
-	background-color: #66cdaa;
-	display: inline-block;
-}
-li {
-	list-style-type: none;
-	display: inline-block;
-}
-h3 {
+.table h2 {
 	font-family: Lobster;
-	font-size: 20px;
 	color: #404040;
+}
+.table ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 0;
+}
+.table li {
+	display: inline-block;
+	width: 33.33%;
+	margin-bottom: 15px;
+	min-width: 200px;
+	font-size: 1rem;
+	background-repeat: no-repeat;
+	background-position: center top;
 	text-align: center;
-	padding-top: 150px;
+}
+.table li:hover {
+	background-position: center;
+}
+.table li:hover h3 {
+	color: white;
+}
+.table li a {
+	display: block;
+	position: relative;
+	height: 173px;
+}
+.table h3 {
+	margin-bottom: 0;
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	font-size: 20px;
 }
 a {
 	text-decoration: none;
 	color: #404040;
 	font-family: Lobster;
 }
-#wetfood {
-	width: 200px;
-	height: 190px;
-	float: left;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png);
+.wetfood {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png);
 }
-#dryfood {
-	width: 200px;
-	height: 190px;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/dry_cat_food.png);	
+.dryfood {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/dry_cat_food.png);	
 }
-#treats {
-	width: 200px;
-	height: 190px;
-	float: right;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_treats.png);
+.treats {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_treats.png);
 }
-#litter {
-	width: 180px;
-	height: 190px;
-	float: left;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_litter.png);	
+.litter {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_litter.png);	
 }
-#accessories {
-	width: 180px;
-	height: 190px;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_bowls.png);
+.accessories {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_bowls.png);
 }
-#beds {
-	width: 200px;
-	height: 190px;
-	float: right;
-	background:
-	url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png);
+.beds {
+	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png);
 }
-#wetfood :hover {
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-#dryfood :hover{
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-#treats :hover {
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-#litter :hover {
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-#accessories :hover {
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-#beds :hover {
-	background-clip: content-box;
-	background-color: white;
-	border-radius: 10px;
-}
-footer {
+.site-footer {
 	height: 120px;
 	width: 100%;
 	border-top: solid 1px;
@@ -201,14 +135,14 @@ footer {
 	display: inline-block;
 	position: relative;
 }
-#address {
+.address {
 	height: 90px;
 	width: 20%;
 	float: left;
 	padding-left: 20px;
 	padding-top: -10px;
 }
-#contact {
+.contact {
 	height: 90px;
 	width: 50%;
 	display: inline-block;
@@ -216,7 +150,7 @@ footer {
 	padding-top: 10px;
 	
 }
-#facebook {
+.facebook {
 	height: 90px;
 	width: 20%;
 	display: inline-block;
