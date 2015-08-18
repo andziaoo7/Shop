@@ -52,7 +52,21 @@ nav li {
 	color: #fff;
 	text-align: right;
 }
-#productmenu {
+.categories {
+	width: 100%;
+	box-sizining: border-box;
+	text-align: center;
+	display: block;
+}
+.leftside {
+	width: 20%;
+	float: left;
+	background-color: #66cdaa;
+	font-family: Lobster;
+	border-right: solid 1px;
+	border-color: #404040;
+}
+.productmenu {
 	list-style-type: none;
 	font-family: Lobster;
 	font-size: 20px;
@@ -60,11 +74,11 @@ nav li {
 	text-align: center;
 	padding-left: 25px;
 	padding-top: 0px;
-	display: block;
+	display: inline;
 	line-height: 50px;
 	background-color: #66cdaa;
 	margin: 0;
-	height: 100%;
+	width: 20%;
 }
 a {
 	text-decoration: none;
@@ -75,7 +89,7 @@ a :hover {
 	background-clip: content-box;
 	background-color: white;
 }
-#productmenu :hover {
+.productmenu :hover {
 	background-clip: content-box;
 	background-color: white;
 }
@@ -87,33 +101,7 @@ h2 {
 	padding-top: 37px;
 	box-sizining: border-box;
 }
-#categories {
-	height: 100%;
-	width: 100%;
-	background-color: #66cdaa;
-	box-sizining: border-box;
-	text-align: center;
-	display: block;
-}
-#leftside {
-	height: 100%;
-	width: 20%;
-	float: left;
-	background-color: #66cdaa;
-	font-family: Lobster;
-	border-right: solid 1px;
-	border-color: #404040;
-}
-#productmenu {
-	height: 100%;
-	width: 20%;
-	background-color: #66cdaa;
-	font-family: Lobster;
-	text-align: center;
-	display: inline;
-}
-
-#rightside {
+.rightside {
 	width: 80%;
 	float: right;
 	background-color: #66cdaa;
