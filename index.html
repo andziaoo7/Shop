@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
     <title>Whiskers - all you nedd for cat</title>
+    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
 </head>
 <body>
 	<nav> 
@@ -47,6 +58,20 @@
 				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>LEGOWISKA</h3></a>
 			</li>
 		</ul>
+	</div>
+	<div id="popup-box1" class="popup-position" onclick="toggle_visibility('popup-box1');">
+		<div id="popup-wrapper" onclick="toggle_visibility('popup-box1');">
+			<div id="popup-container">
+				<h3> Przy zakupie kuwety za min. 70,00 zł żwirek marki Benek o poj. 10 l gratis! </h3>
+				<p><img src="http://media.mediazs.com/bilder/benek/super/compact/zapachowy/wirek/dla/kota/6/300/64942_PLA_SuperBenek_Compact_Zapach_10l_6.jpg"></p>
+				<p class="redirector"><a href="index2.html">Przejdź do strony kategorii produktów</a></p>
+				<p class="popup-close"><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');">[Zamknij]</a></p>
+			</div> <!--popup container end-->
+		</div><!--popup wrapper end-->
+	</div> <!-- pop up box end -->
+
+	<div id="wrapper">
+		<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');"> <strong>Skorzystaj z sierpniowej promocji</strong></a></p>
 	</div>
 	<footer class="site-footer"> 
 			<div class="address">

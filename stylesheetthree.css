@@ -20,6 +20,9 @@ nav li {
 	list-style-type: none;
 	font-style: italic;
 }
+nav li:hover a {
+	color: white;
+}
 .footprint {
 	height: 25px;
 	width: 30px;
