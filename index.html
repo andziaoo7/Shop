@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myStore">
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
     <title>Whiskers - all you nedd for cat</title>
-    <script type="text/javascript">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js">
 <!--
     function toggle_visibility(id) {
        var e = document.getElementById(id);
-       if(e.style.display == 'block')
+       if(e.style.display == 'block') {
           e.style.display = 'none';
-       else
+      		var container = document.getElementById("popup-container");
+      		container.removeAttribute("class"); }
+       else {
           e.style.display = 'block';
+      		setTimeout(function() {
+				var container = document.getElementById("popup-container");
+	      		container.setAttribute("class", "popup-container-center");
+      		},0);
+      	};
+      		
     }
 //-->
 </script>
@@ -36,26 +44,12 @@
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
 	</div>
-	<div class ="table">
+	<div class="table" ng-controller="StoreController as store">
 		<h2>KATEGORIE PRODUKTÓW</h2>
 		<ul>
-			<li class="wetfood">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>MOKRA KARMA</h3></a>
-			</li>
-			<li class="dryfood">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>SUCHA KARMA</h3></a>
-			</li>
-			<li class="treats">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>PRZEKĄSKI</h3></a>
-			</li>
-			<li class="litter">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>ŻWIREK</h3></a>
-			</li>
-			<li class="accessories">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>AKCESORIA</h3></a>
-			</li>
-			<li class="beds">
-				<a href="file:///C:/Users/asus/shopnew/index2.html"><h3>LEGOWISKA</h3></a>
+			<li ng-repeat="category in store.productCategories" ng-style="{'background-image': {category.img}}">
+				<a href="{{category.link}}"><h3>{{category.name | uppercase}}</h3></a>
+
 			</li>
 		</ul>
 	</div>
@@ -87,5 +81,6 @@
 				<a href="https://www.facebook.com/"><img class="facebook" src="http://awakenthespiritbook.com/wp-content/uploads/2013/09/find-us-on-facebook-logo-vector-300x102.jpg"/></a>
 			</div>
 	</footer>
+	<script src="myapp.js"></script>
 </body>
 </html>

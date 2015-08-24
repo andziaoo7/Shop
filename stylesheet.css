@@ -104,7 +104,7 @@ a {
 	color: #404040;
 	font-family: Lobster;
 }
-.wetfood {
+/*.wetfood {
 	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png);
 }
 .dryfood {
@@ -121,7 +121,7 @@ a {
 }
 .beds {
 	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png);
-}
+}*/
 .popup-position {
 	display: none;
 	position: fixed;
@@ -143,7 +143,20 @@ a {
 	text-align: center;
 	color: #404040;
 	font-family: Lobster;
+	left: 0%;
+    position: absolute;
+    transform: translate(-100%, 0);
+     -webkit-transition: all 2s ease-in;
+    transition: all 2s ease-in;
 }
+
+.popup-container-center {
+	left: 50% !important;
+    /*position: fixed !important;*/
+    transform: translate(-50%, 0) !important;
+
+}
+
 .redirector :hover {
 	font-size: 16px;
 	text-decoration: underline;
