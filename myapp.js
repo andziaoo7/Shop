@@ -1,9 +1,9 @@
 (function() {
-	var app = angular.module('myStore', [ ]);
+	var app = angular.module('store', [ ]);
 	app.controller('StoreController', function(){
-		this.productCategories = productCategories;
+		this.products = products;
 	});
-	var productCategories = [
+	var products = [
 	{
 		id: 1,
 		img: 'http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png',

@@ -104,7 +104,7 @@ a {
 	color: #404040;
 	font-family: Lobster;
 }
-/*.wetfood {
+.wetfood {
 	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png);
 }
 .dryfood {
@@ -121,7 +121,7 @@ a {
 }
 .beds {
 	background-image: url(http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png);
-}*/
+}
 .popup-position {
 	display: none;
 	position: fixed;

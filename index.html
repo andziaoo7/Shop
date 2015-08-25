@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myStore">
+<html lang="en" ng-app="store">
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
@@ -18,11 +18,10 @@
 				var container = document.getElementById("popup-container");
 	      		container.setAttribute("class", "popup-container-center");
       		},0);
-      	};
-      		
-    }
+      	};	
+    };
 //-->
-</script>
+	</script>
 </head>
 <body>
 	<nav> 
@@ -47,9 +46,8 @@
 	<div class="table" ng-controller="StoreController as store">
 		<h2>KATEGORIE PRODUKTÓW</h2>
 		<ul>
-			<li ng-repeat="category in store.productCategories" ng-style="{'background-image': {category.img}}">
-				<a href="{{category.link}}"><h3>{{category.name | uppercase}}</h3></a>
-
+			<li ng-repeat="product in store.products" ng-style="{'background-image': 'url({{product.img}})'}">
+				<a href="{{product.link}}"><h3>{{product.name | uppercase}}</h3></a>
 			</li>
 		</ul>
 	</div>
