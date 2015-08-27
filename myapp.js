@@ -39,5 +39,19 @@
 		img: 'http://media.petsathome.com/wcsstore/pah-cas01//c/cat_beds.png',
 		name: 'legowiska',
 		link: 'index2.html'
-	}]
+	}];
+	
+	app.directive('navigationSection', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'navigation-section.html'
+		};
+	});
+	
+	app.directive('footerSection', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'footer-section.html'
+		};
+	});
 })();

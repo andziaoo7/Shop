@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
     <title>Whiskers - all you need for cat</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js">
-<!--
+    <script type="text/javascript">
 	    function toggle_visibility(id) {
 	       var e = document.getElementById(id);
 	       if(e.style.display == 'block') {
@@ -20,26 +19,13 @@
 	      		},0);
 	      	};	
 	    };
-	//-->
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 </head>
 <body>
-	<nav> 
-		<ul>
-			<li>
-				<img class="footprint" src="http://cliparts.co/cliparts/qTB/XA6/qTBXA65zc.png"/>
-				<li><a href="C:\Users\asus\shopnew\index.html">Strona główna</a></li>
-			</li>
-			<li>
-				<img class="footprint" src="http://cliparts.co/cliparts/qTB/XA6/qTBXA65zc.png"/>
-				<li><a href="index2.html">Kategorie produktów</a></li>
-			</li>
-			<li>
-				<img class="footprint" src="http://cliparts.co/cliparts/qTB/XA6/qTBXA65zc.png"/>
-				<li><a href="index3.html">Automat na karmę na microchip</a></li>
-			</li>
-		</ul>
-	</nav>
+	
+	<navigation-section></navigation-section>
+
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
 	</div>
@@ -64,20 +50,7 @@
 	<div id="wrapper">
 		<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');"><strong>Skorzystaj z sierpniowej promocji</strong></a></p>
 	</div>
-	<footer class="site-footer"> 
-			<div class="address">
-				<p> <strong>Whiskers Shop</strong></p>
-				<p> ul. Mysia 10</p>
-				<p> 53-230 Wrocław</p>
-			</div>
-			<div class="contact">
-				<p> <strong>e-mail:</strong> miau@whiskers.com</p>
-				<p> <strong>phone:</strong> 100-200-300</p>
-			</div>
-			<div>
-				<a href="https://www.facebook.com/"><img class="facebook" src="http://awakenthespiritbook.com/wp-content/uploads/2013/09/find-us-on-facebook-logo-vector-300x102.jpg"/></a>
-			</div>
-	</footer>
+	<footer-section></footer-section>
 	<script src="myapp.js"></script>
 </body>
 </html>
