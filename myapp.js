@@ -54,4 +54,20 @@
 			templateUrl: 'footer-section.html'
 		};
 	});
+
+
+	app.controller('PopupController', function($scope){
+		$scope.popupVisible = true;
+		$scope.toggle = function(){
+			$scope.popupVisible = !$scope.popupVisible;
+		};	
+	});	
+
+	app.directive('popupSection', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'popup-section.html'
+		};
+	});
+
 })();
