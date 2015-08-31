@@ -56,18 +56,18 @@
 	});
 
 
-	app.controller('PopupController', function($scope, $window){
-		$scope.popupVisible = true;
+	app.controller('PopupController', function($scope){
+		$scope.popupVisible = false;
 		$scope.toggle = function(){
 			$scope.popupVisible = !$scope.popupVisible;
 		};
 	});
 
+
 	app.directive('popupSection', function(){
 		return{
 			restrict: 'E',
-			templateUrl: 'popup-section.html',
-			controller: function(){}
+			templateUrl: 'popup-section.html'
 		};
 	});
 	
