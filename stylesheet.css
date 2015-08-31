@@ -154,7 +154,6 @@ a {
 	left: 50% !important;
     /*position: fixed !important;*/
     transform: translate(-50%, 0) !important;
-
 }
 
 .redirector :hover {
@@ -165,8 +164,9 @@ a {
 	text-align: right;
 	font-size: 12px;
 }
-.popup-close :hover {
+.popup-close :hover a {
 	color: #66cdaa;
+	text-decoration: underline;
 }
 #wrapper {
 	width: 100%;
@@ -182,7 +182,7 @@ a {
 	font-family: Lobster;
 	font-size: 20px;
 }
-#wrapper :hover p {
+#wrapper :hover {
 	color: white;
 }
 .site-footer {

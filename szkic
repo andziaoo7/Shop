@@ -1,0 +1,69 @@
+
+<!-- funkcja na popup boxa -->
+
+ function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block') {
+	          e.style.display = 'none';
+	      		var container = document.getElementById("popup-container");
+	      		container.removeAttribute("class"); }
+	       else {
+	          e.style.display = 'block';
+	      		setTimeout(function() {
+					var container = document.getElementById("popup-container");
+		      		container.setAttribute("class", "popup-container-center");
+	      		},0);
+	      	};	
+	    };
+
+
+<!-- popup box -->
+
+<div ng-controller="PopupController as popupCtrl">
+	<popup-section></popup-section> <!-- popup section directive -->
+	
+	<div id="wrapper">
+		<p><a href="javascript:void(0)" onclick="toggle()"><strong>Skorzystaj z sierpniowej promocji</strong></a></p> <!-- dodać tutaj ng-click="toggle()" -->
+	</div>
+
+</div>
+
+	
+<div id="popup-box1" ng-controller="PopupController as popupCtrl">
+		<popup-section class="popup-position"></popup-section> 
+	</div> <!-- end of pop-up box 1-->
+
+<!-- dyrektywa
+	app.directive('popupSection', function(){
+	return {
+	restrict: 'E',
+	templateUrl: 'popup-section.html'
+	};
+	});
+
+	zawartość diva dać do nowego htmla (popup-section.html) i zamiast div id="popup-box1" zmienić na "popup-section", hoovera ustawić na div id="wrapper" bo już nie będzie a hrefa odnoszącego się do linku javascriptowego
+
+<!-- w myapp.js -->
+wzór na toggla
+
+app.controller('PopupController', function($scope){
+	$scope.popupVisible = true;
+	$scope.toggle = function(){
+		$scope.popupVisible = !$scope.popupVisible;
+	};
+});
+
+})
+
+
+var myVar = null;
+
+	if (condition) {
+		myVar = 'true';
+	} else {
+		myVar = 'false';
+	}
+
+	// Alternatywna pisownia
+	var myVar = condition ? 'true' : 'false';
+

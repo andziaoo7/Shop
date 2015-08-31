@@ -56,18 +56,19 @@
 	});
 
 
-	app.controller('PopupController', function($scope){
+	app.controller('PopupController', function($scope, $window){
 		$scope.popupVisible = true;
 		$scope.toggle = function(){
 			$scope.popupVisible = !$scope.popupVisible;
-		};	
-	});	
+		};
+	});
 
 	app.directive('popupSection', function(){
 		return{
 			restrict: 'E',
-			templateUrl: 'popup-section.html'
+			templateUrl: 'popup-section.html',
+			controller: function(){}
 		};
 	});
-
+	
 })();
