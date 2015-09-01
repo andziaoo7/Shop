@@ -15,38 +15,18 @@
 		<h1>Whiskers<br/>Shop</h1>
 	</div>
 	<div class="categories">
-		<div class="leftside"> 
+		<div class="leftside" ng-controller="CategoryController as category"> 
 			<h2>KATEGORIE PRODUKTÓW</h2>
 			<ul class="productmenu">
-				<li><a href="index3.html">Mokra karma</a></li>
-				<li><a href="index3.html">Sucha karma</a></li>
-				<li><a href="index3.html">Przekąski</a></li>					
-				<li><a href="index3.html">Żwirki</a></li>
-				<li><a href="index3.html">Akcesoria</a></li>
-				<li><a href="index3.html">Zabawki</a></li>
+				<li ng-repeat="product in category.products">
+					<a href="{{ product.link }}">{{ product.name }}</a>
+				</li>
 			</ul>
 		</div>
-		<section class="rightside"> 
+		<section class="rightside" ng-controller="RightsideController as rightsideCtrl"> 
 			<ul> 
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg"><h4>Automat na karmę na microchip</h4></img></a>
-				</li>
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/7108756P.jpg"><h4>Pojemnik na jedzenie</h4></img></a>
-				</li>
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/7114740P.jpg"><h4>Miski ceramiczne</h4></img></a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/37039P.jpg"><h4>Kuwety</h4></img></a>
-				</li>
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/P3659.jpg"><h4>Smycze</h4></img></a>
-				</li>
-				<li>
-					<a href="index3.html"><img src="http://media.petsathome.com/wcsstore/pah-cas01//173/28539P.jpg"><h4>Szelki</h4></img></a>
+				<li ng-repeat="product in rightsideCtrl.products"> 
+					<a href="{{ product.link }}"><img src="{{ product.img }}"><h4>{{ product.name }}</h4></img></a>
 				</li>
 			</ul>
 		</section>

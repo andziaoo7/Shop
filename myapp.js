@@ -70,5 +70,99 @@
 			templateUrl: 'popup-section.html'
 		};
 	});
+
+	app.controller('CategoryController', function(){
+		this.products = products;
+	});
+	var products = [
+	{
+		id: 1,
+		name: 'Mokra karma',
+		link: 'index3.html'
+	},
+	{
+		id: 2,
+		name: 'Sucha karma',
+		link: 'index3.html'
+	},
+	{
+		id: 3,
+		name: 'Przekąski',
+		link: 'index3.html'
+
+	},
+	{
+		id: 4,
+		name: 'Żwirki',
+		link: 'index3.html'
+
+	},
+	{
+		id: 5,
+		name: 'Akcesoria',
+		link: 'index3.html'
+
+	},
+	{
+		id: 6,
+		name: 'Zabawki',
+		link: 'index3.html'
+
+	}];
+
+	app.controller('RightsideController', function(){
+		this.products = products;
+	});
+	var products = [
+	
+	{
+		id: 1,
+		name: 'Automat na karmę na microchip',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg'
+	},
+	{
+		id: 2,
+		name: 'Pojemnnik na jedzenie',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7108756P.jpg'
+
+	},
+	{
+		id: 3,
+		name: 'Miski ceramiczne',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7114740P.jpg'
+
+	},
+	{
+		id: 4,
+		name: 'Kuwety',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/37039P.jpg'
+
+	},
+	{
+		id: 5,
+		name: 'Smycze',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/P3659.jpg'
+
+	},
+	{
+		id: 6,
+		name: 'Szelki',
+		link: 'index3.html',
+		img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/28539P.jpg'
+
+	}];
+
+	app.directive('recommendation', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'recommendation.html'
+		};
+	});
+
 	
 })();
