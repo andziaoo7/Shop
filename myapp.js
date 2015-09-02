@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('store', []);
+	var app = angular.module('store', ['ngRoute']);
 	app.controller('StoreController', function(){
 		this.products = categories;
 	});
@@ -164,6 +164,81 @@
 		};
 	});
 	
+	
+
+	app.config(['$routeProvider', function($routeProvider) {
+		$routeProvider
+			
+			//route for home page
+			.when('/', {
+				templateUrl: 'index.html',
+				/*controller: 'StoreController'*/
+			})
+
+			//route for product category - automat
+			.when('/automat', {
+				templateUrl: 'automat.html',
+				controller: 'automatController'
+			})
+
+			.when('/pojemnik', {
+				templateUrl: 'pojemnik.html',
+				controller: 'boxController'
+			})
+
+			.when('/miski', {
+				templateUrl: 'miski.html',
+				controller:  'bowlController'
+			})
+
+			.when('/kuwety', {
+				templateUrl: 'kuwety.html',
+				controller:  'litterController'
+			})
+
+			.when('/smycze', {
+				templateUrl: 'smycze.html',
+				controller: 'leashController'
+			})
+
+			.when('/szelki', {
+				templateUrl: 'szelki.html',
+				controller: 'bodyController'
+			});
+	}]);
+
+
+	app.controller('StoreController', function($scope) {
+		$scope.message = 'Everyone come and see how good I look!';
+	});
+
+	app.controller('automatController', function($scope) {
+		$scope.message = 'automat page';
+	});
+
+	app.controller('boxController', function($scope) {
+		$scope.message = 'box page';
+	});
+
+	app.controller('bowlController', function($scope) {
+		$scope.message = 'bowl page';
+	});
+
+	app.controller('litterController', function($scope) {
+		$scope.message = 'litter page';
+	});
+
+	app.controller('leashController', function($scope) {
+		$scope.message = 'leash page';
+	});
+
+	app.controller('bodyController', function($scope) {
+		$scope.message = 'body page';
+	});
+
+
+
+/*
 	app.controller('mainController', function($scope, CartService) {
 		$scope.message = 'bla bla bla';
 
@@ -237,7 +312,7 @@
 
 		};
 
-	});
+	});*/
 
 
 })();

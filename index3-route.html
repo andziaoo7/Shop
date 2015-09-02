@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="stylesheetthree.css" />
+    <title>Whiskers - all you nedd for cat</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   	<script src="myapp.js"></script>
+</head>
+<body>
+	
+	<navigation-section></navigation-section>
+
+	<div class="hero">
+		<h1>Whiskers<br/>Shop</h1>
+	</div>
+
+	<section>
+
+		<div id="main">
+
+			{{ message }}
+
+			<div ng-view></div>
+
+
+		</div>
+		
+	</section>
+	
+	<recommendation></recommendation>
+
+	<footer-section></footer-section>
+	<script src="myapp.js"></script>
+</body>
+</html>
