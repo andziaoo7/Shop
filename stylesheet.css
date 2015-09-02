@@ -57,7 +57,7 @@ nav li:hover a {
 .table {
 	border: #66cdaa 2px solid;
 	background-color: #66cdaa;
-	/*position: relative;*/
+	position: relative;
 	text-align: center;
 	padding: 15px 70px 30px;
 }

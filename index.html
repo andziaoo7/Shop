@@ -17,7 +17,7 @@
 		<h2>KATEGORIE PRODUKTÓW</h2>
 		<ul>
 			<li ng-repeat="product in store.products" ng-style="{'background-image': 'url({{product.img}})'}">
-				<a href="{{product.link}}"><h3>{{product.name | uppercase}}</h3></a>
+				<a href="{{ product.link }}"><h3>{{ product.name | uppercase }}</h3></a>
 			</li>
 		</ul>
 	</div>

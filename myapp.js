@@ -1,9 +1,9 @@
 (function() {
-	var app = angular.module('store', [ ]);
+	var app = angular.module('store', []);
 	app.controller('StoreController', function(){
-		this.products = products;
+		this.products = categories;
 	});
-	var products = [
+	var categories = [
 	{
 		id: 1,
 		img: 'http://media.petsathome.com/wcsstore/pah-cas01//c/wet_cat_food.png',
@@ -163,6 +163,81 @@
 			templateUrl: 'recommendation.html'
 		};
 	});
-
 	
+	app.controller('mainController', function($scope, CartService) {
+		$scope.message = 'bla bla bla';
+
+		var product = {
+			id: 1,
+			price: 22.99,
+			url: 'http://image.jpg',
+			title: 'aasdasdasd'
+		};
+
+		// $scope.addToCart = CartService.addItem(product); dodawanie koszyka 
+		$scope.addToCart = function(product) {
+
+			var item = {
+				id: product.id,
+				price: product.price
+			};
+
+			CartService.addItem(item);
+		};
+	});
+
+
+	app.service('CartService', function(){
+		var items = [];
+
+		return {
+
+			addItem: function(product) {
+
+				var inCart = items.filter(function(item){
+					return item.id === product.id;
+				});
+
+				if ( !!inCart.length ) {
+					var obj = inCart[0];
+					obj.qty += 1;
+
+					var index;
+
+					// 
+
+					items[index].qty += 1;
+
+					// var newItems = items.filter(function(item){
+					// 	return item.id !== product.id;
+					// });
+					// newItems.push(obj);
+					// TODO - set qty + 1
+
+				} else {
+					// inCart => [];
+					items.push(product);
+				}
+			},
+
+			removeItem: function(id) {
+
+			},
+
+			getTotalQty: function() {
+
+			},
+
+			getTotalCost: function() {
+				var total = 0;
+				// forEach
+				return 123.89;
+
+			}
+
+		};
+
+	});
+
+
 })();
