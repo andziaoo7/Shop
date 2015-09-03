@@ -10,26 +10,29 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
    	<script src="myapp.js"></script>
 </head>
-<body>
+<body ng-controller="StoreController">
 	
-	<navigation-section></navigation-section>
+	<!--<navigation-section></navigation-section>
 
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
-	</div>
+	</div>-->
 
-	<section>
-
-		<div id="main">
+	<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#automat"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+      </ul>
+	
+	<div id="main">
 
 			{{ message }}
 
 			<div ng-view></div>
 
 
-		</div>
+	</div>
 		
-	</section>
 	
 	<recommendation></recommendation>
 

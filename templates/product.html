@@ -1,0 +1,35 @@
+<section ng-controller="ProductController">
+	<div class="leftside">
+		<img src="http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg">
+		<ul> dodać totaj nowe obrazki w ng-repeat
+			<li>
+				<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/3/300/475256_surefeedmicrochip_3.jpg"/>
+			</li>
+			<li>
+		 		<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/1/300/475256_surefeed_chipautomat_1.jpg"/>
+		 	</li>
+		 	<li>
+				<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/4/300/65566_surefeedautomat_4.jpg"/>
+			</li>
+		</ul>
+	</div>
+	<div class"rightside">
+		<h2>{{ product.name }}</h2>
+		<ul class="rightside-text"> {{ product.description }}
+			<li>automat na karmę na mikrochip do korzystania przez wiele zwierząt,</li>
+			<li>kontrolowany dostęp do miski uniemożliwia podkradanie jedzenie przez pozostałe zwierzęta,</li>
+			<li>idealny w przypadku zwierząt przyjmujących leki lub specjalistyczną karmę,</li>
+			<li>automatyczne zamykanie po oddalenia się zwierzęcia,</li>
+			<li>jedzenie pozostaje świeższe przez dłuższy czas,</li>
+			<li><strong>gwarancja: </strong>3 lata od daty zakupu.</li>
+		</ul>
+		<div>
+			<h3><strong>Cena: </strong>{{ product.price }}</h3>
+		</div>
+		<div id="price">
+			<button><a href="index4.html"><img src="images/add to cart button.png"></img></a></button>
+		</div>
+	</div>
+</section>
+
+<recommendation></recommendation>

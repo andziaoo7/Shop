@@ -6,8 +6,8 @@
     <title>Whiskers - all you nedd for cat</title>
     <script type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-    <!--<script src="bower_components/angular-route/angular-route.js"></script>
-  	<script src="js/app.js"></script>-->
+    <script src="bower_components/angular-route/angular-route.js"></script>
+  	<!--<script src="js/app.js"></script>-->
 
 </head>
 <body>
@@ -16,38 +16,10 @@
 
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
-	</div>	
+	</div>
+
+	<div ng-view></div>
 	
-	<section>
-		<div class="leftside">
-			<img src="http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg">
-			<ul>
-				<li>
-					<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/3/300/475256_surefeedmicrochip_3.jpg"/>
-				</li>
-				<li>
-			 		<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/1/300/475256_surefeed_chipautomat_1.jpg"/>
-			 	</li>
-			 	<li>
-					<img class="smallimage" src="http://media.mediazs.com/bilder/surefeed/automat/na/karm/na/mikrochip/4/300/65566_surefeedautomat_4.jpg"/>
-				</li>
-			</ul>
-		</div>
-		<div class"rightside" ng-controller="DescriptionController">
-			<h2>Automat na karmę na microchip</h2>
-			<ul class="rightside-text">
-				<li>automat na karmę na mikrochip do korzystania przez wiele zwierząt,</li>
-				<li>kontrolowany dostęp do miski uniemożliwia podkradanie jedzenie przez pozostałe zwierzęta,</li>
-				<li>idealny w przypadku zwierząt przyjmujących leki lub specjalistyczną karmę,</li>
-				<li>automatyczne zamykanie po oddalenia się zwierzęcia,</li>
-				<li>jedzenie pozostaje świeższe przez dłuższy czas,</li>
-				<li><strong>gwarancja: </strong>3 lata od daty zakupu.</li>
-			</ul>
-			<h3><strong>Cena: </strong>450,00 zł</h3>
-		</div>
-	</section>
-	
-	<recommendation></recommendation>
 
 	<footer-section></footer-section>
 	<script src="myapp.js"></script>
