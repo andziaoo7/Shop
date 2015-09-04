@@ -10,6 +10,18 @@
 	
 	<navigation-section></navigation-section>
 
+	<!--<customer-panel></customer-panel> zmienić go potem na dyrektywę i dodać  ng-controller="CustomerController as customer"-->
+	<div>
+		<div class="customer-container"> 
+			<label> Login: </label>
+			<input type="text" ng-model="users.name"></input><!-- end of input login-->
+			<label>Password: </label>
+			<input type="password" ng-model="users.password"></input><!-- end of input password-->
+	
+			<button class="login">Log In</button>
+		</div>	
+	</div>
+
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
 	</div>
@@ -24,7 +36,7 @@
 
 	<div ng-controller="PopupController as popupCtrl">
 		<div id="wrapper">
-			<p><a ng-click="toggle()"><strong>Skorzystaj z sierpniowej promocji</strong></a></p>
+			<p><a ng-click="toggle()"><strong>Skorzystaj z wrześniowej promocji</strong></a></p>
 		</div>
 		<popup-section></popup-section>
 	</div>
@@ -32,5 +44,6 @@
 	<footer-section></footer-section>
 	
 	<script src="myapp.js"></script>
+	
 </body>
 </html>

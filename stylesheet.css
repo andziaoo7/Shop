@@ -42,6 +42,20 @@ nav li:hover a {
 	border-top: solid 1px;
 	border-color: #404040;
 }
+.customer-container {
+	background-color: #66cdaa;
+	border-top: solid 1px;
+	border-color: #404040;
+	height: 40px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.customer-container label {
+	display: inline-block;
+	font-family: Lobster;
+	color: #404040;
+}
+
 .hero h1 {
 	display: inline-block;
 	margin: 0;
