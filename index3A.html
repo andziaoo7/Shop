@@ -1,0 +1,20 @@
+<section>
+<div class="leftside">
+	<img src="{{ product.img }}"/>
+	<ul>
+		<li ng-repeat="img in RightsideController.products">
+			<img class="smallimage" src="{{ product.img }}"/>
+		</li>
+	</ul>
+</div>
+<div class"rightside">
+	<h2>{{ product.name }}</h2>
+	<ul class="rightside-text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue. Vivamus congue mattis urna. Donec id volutpat ante, eget pellentesque quam. Nulla quis laoreet erat. Vivamus sit amet mauris vitae ipsum venenatis eleifend vitae sit amet est. Aenean elementum enim lorem, in ultricies lorem vehicula ac. Mauris faucibus leo vitae dapibus tincidunt.</p>
+	</ul>
+	<h3><strong>Cena: </strong>{{ product.price | currency }}</h3>
+</div>
+<div id="price">
+	<button><ng-click="addToCart(products.product)"><img src="images/add to cart button.png"></img></button>
+</div>
+</section>

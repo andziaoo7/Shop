@@ -6,6 +6,7 @@
     <title>Whiskers - all you nedd for cat</title>
     <script type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 </head>
 <body>
 
@@ -19,19 +20,21 @@
 			<h2>KATEGORIE PRODUKTÓW</h2>
 			<ul class="productmenu">
 				<li ng-repeat="product in category.products">
-					<a href="{{ product.link }}">{{ product.name }}</a>
+					<a href="{{product.link}}">{{ product.name }}</a>
 				</li>
 			</ul>
 		</div>
 		<section class="rightside" ng-controller="RightsideController as rightsideCtrl"> 
 			<ul> 
 				<li ng-repeat="product in rightsideCtrl.products"> 
-					<a href="{{ product.link }}"><img src="{{ product.img }}"><h4>{{ product.name }}</h4></a>
+					<a href="{{product.link}}"><img src="{{product.img}}"><h4>{{ product.name }}</h4></a>
 				</li>
 			</ul>
 		</section>
 	</div>
 	<footer-section></footer-section>
+
 	<script src="myapp.js"></script>
+	
 </body>
 </html>
