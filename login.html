@@ -1,0 +1,12 @@
+<form name="loginForm" ng-controller="CustomerController" ng-submit="CustomerController.logIn(user)">
+	<div class="customer-container"> 
+		<label> Username: 
+			<p> Witaj, {{ user.name }} !</p>
+
+		</label>
+		
+
+		<button type="button" ng-click="submit()">Log Out</button>
+
+	</div>	
+</form>

@@ -19,6 +19,8 @@ nav li {
 	display: inline-block;
 	list-style-type: none;
 	font-style: italic;
+	color: #404040;
+	font-family: Lobster;
 }
 nav li:hover a {
 	color: white;
@@ -113,7 +115,7 @@ nav li:hover a {
 	right: 0;
 	font-size: 20px;
 }
-a {
+.table a {
 	text-decoration: none;
 	color: #404040;
 	font-family: Lobster;
@@ -140,6 +142,9 @@ a {
 	font-family: Lobster;
 	left: 0%;
 }
+#popup-container a {
+	color: #404040;
+}
 
 .popup-container-center {
 	left: 50% !important;
@@ -150,6 +155,7 @@ a {
 .redirector :hover {
 	font-size: 16px;
 	text-decoration: underline;
+	color: #404040;
 }
 .popup-close {
 	text-align: right;
@@ -172,6 +178,7 @@ a {
 	margin-top: 0;
 	font-family: Lobster;
 	font-size: 20px;
+	color: #404040;
 }
 #wrapper :hover {
 	color: white;

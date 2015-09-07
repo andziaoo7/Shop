@@ -1,0 +1,14 @@
+<div class="table">
+	<h2>KATEGORIE PRODUKTÓW</h2>
+	<ul>
+		<li ng-repeat="product in products" ng-style="{'background-image': 'url({{product.img}})'}">
+			<a href="{{ product.link }}"><h3>{{ product.name | uppercase }}</h3></a>
+		</li>
+	</ul>
+</div>
+<div ng-controller="PopupController as popupCtrl">
+	<div id="wrapper">
+		<p><a ng-click="toggle()"><strong>Skorzystaj z wrześniowej promocji</strong></a></p>
+	</div>
+	<popup-section></popup-section>
+</div>

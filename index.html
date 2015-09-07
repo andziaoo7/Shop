@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheettwo.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheetthree.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheetfour.css" />
     <title>Whiskers - all you need for cat</title>
     <script type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
@@ -13,35 +16,25 @@
 	
 	<navigation-section></navigation-section>
 
-	<div>
-		<div class="customer-container"> 
-			<label> Login: </label>
-			<input type="text" ng-model="users.name"></input><!-- end of input login-->
-			<label>Password: </label>
-			<input type="password" ng-model="users.password"></input><!-- end of input password-->
-	
-			<button class="login" ng-click="check()">Log In</button>
-		</div>	
+	<div ng-controller="CustomerController">
+		<form action="/" id="logIn" ng-show="logged()">
+			<div class="customer-container"> 
+				<label> Username: </label>
+				<input type="text" id="username" ng-model="username"></input><!-- end of input login-->
+				<label>Hasło: </label>
+				<input type="password" id="password" ng-model="password"></input><!-- end of input password-->
+		
+				<button type="button" ng-click="submit()">Log In</button>				
+			</div>	
+		</form>
 	</div>
 
 	<div class="hero">
 		<h1>Whiskers<br/>Shop</h1>
 	</div>
-	<div class="table" ng-controller="StoreController as store">
-		<h2>KATEGORIE PRODUKTÓW</h2>
-		<ul>
-			<li ng-repeat="product in store.products" ng-style="{'background-image': 'url({{product.img}})'}">
-				<a href="{{ product.link }}"><h3>{{ product.name | uppercase }}</h3></a>
-			</li>
-		</ul>
-	</div>
+	
+	<div ng-view></div>
 
-	<div ng-controller="PopupController as popupCtrl">
-		<div id="wrapper">
-			<p><a ng-click="toggle()"><strong>Skorzystaj z wrześniowej promocji</strong></a></p>
-		</div>
-		<popup-section></popup-section>
-	</div>
 
 	<footer-section></footer-section>
 	

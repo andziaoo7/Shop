@@ -1,0 +1,17 @@
+<div class="categories">
+	<div class="leftside"> 
+		<h2>KATEGORIE PRODUKTÓW</h2>
+		<ul class="productmenu">
+			<li ng-repeat="product in products">
+				<a href="{{product.link}}">{{ product.name }}</a>
+			</li>
+		</ul>
+	</div>
+	<section class="rightside"> 
+		<ul> 
+			<li ng-repeat="product in products"> 
+				<a href="{{product.link}}"><img src="{{product.img}}"><h4>{{ product.name }}</h4></a>
+			</li>
+		</ul>
+	</section>
+</div>
