@@ -1,0 +1,19 @@
+
+// JSON files 
+
+{"products":[{"id":1,"name":"Automat na karmę na microchip","link":"#/product/1","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":450},{"id":2,"name":"Pojemnnik na jedzenie","link":"#/product/2","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/7108756P.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":10},{"id":3,"name":"Miski ceramiczne","link":"#/product/3","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/7114740P.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":45},{"id":4,"name":"Kuwety","link":"#/product/4","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/37039P.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":58},{"id":5,"name":"Smycze","link":"#/product/5","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/P3659.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":12},{"id":6,"name":"Szelki","link":"#/product/6","img":"http://media.petsathome.com/wcsstore/pah-cas01//173/28539P.jpg","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.","price":23.5}]}
+
+app.service('RightsideService', function($http, $q) {
+		this.products = [];
+
+		this.downloadProducts = function() {
+			return $q.all([$http.get("https://demo5674451.mockable.io/product")]).then(function (data) {
+
+				return data.products;
+			});
+		};
+		
+		// this.getProduct = function() {
+		// 	return deferred.promise;
+		// }
+	});

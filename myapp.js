@@ -128,7 +128,7 @@
 		};
 	});
 
-	app.controller('CategoryController', function(){
+	app.controller('CategoryController', function($scope, $http){
 		this.products = products;
 	});
 	var products = [
@@ -163,135 +163,50 @@
 		link: '#/category'
 	}];
 
-	app.controller('RightsideController', function($scope, CartService, $routeParams){
-		// this.products = products;
-		//$scope.products = ProductService.getAll(); /*w funkcji dać scope i service*/
-		var products = [
-		
-			{
-				id: 1,
-				name: 'Automat na karmę na microchip',
-				link: '#/product/1',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 450.00
-			},
-			{
-				id: 2,
-				name: 'Pojemnnik na jedzenie',
-				link: '#/product/2',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7108756P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 10.00
-			},
-			{
-				id: 3,
-				name: 'Miski ceramiczne',
-				link: '#/product/3',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7114740P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 45.00
-			},
-			{
-				id: 4,
-				name: 'Kuwety',
-				link: '#/product/4',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/37039P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 58.00
-			},
-			{
-				id: 5,
-				name: 'Smycze',
-				link: '#/product/5',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/P3659.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 12.00
-			},
-			{
-				id: 6,
-				name: 'Szelki',
-				link: '#/product/6',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/28539P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 23.50
-			}
-		];
 
-		$scope.products = products;
-		$scope.id = $routeParams.id || 1;
-		$scope.product = products.filter(function(item){
-			return item.id == $scope.id
-		});
-		
-
-	});
 	
 
-	app.controller('CartController', function($scope, CartService){
-		var products = [
-	
-			{
-				id: 1,
-				name: 'Automat na karmę na microchip',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7116460P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 450.00
-			},
-			{
-				id: 2,
-				name: 'Pojemnnik na jedzenie',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7108756P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 10.00
-			},
-			{
-				id: 3,
-				name: 'Miski ceramiczne',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/7114740P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 45.00
-			},
-			{
-				id: 4,
-				name: 'Kuwety',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/37039P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 58.00
-			},
-			{
-				id: 5,
-				name: 'Smycze',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/P3659.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 12.00
-			},
-			{
-				id: 6,
-				name: 'Szelki',
-				link: 'index3.html',
-				img: 'http://media.petsathome.com/wcsstore/pah-cas01//173/28539P.jpg',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum turpis vel pulvinar bibendum. Donec eros lacus, consectetur sit amet sodales sit amet, consequat eget justo. Nulla sollicitudin ante in eros accumsan congue.',
-				price: 23.50
-			}
-		];	
+	// service do obsługi pliku json z rightside controllera
 
-		//$scope.addToCart = CartService.addItem(product); //dodawanie koszyka 
-		$scope.addToCart = function(product) {
-
-			var item = {
-				id: product.id,
-				price: product.price
-			};
-
-			CartService.addItem(item);
+	app.service('RightsideService', function($http) {
+		this.downloadProducts = function() {
+			return $http.get("https://demo5674451.mockable.io/product");
 		};
-	});	
+	});
+
+	app.controller('RightsideController', function($scope, CartService, $routeParams, $http, RightsideService){
+		// $scope.product = {};
+		// $scope.id = $routeParams.id || 1;
+		
+
+		// $http.get("https://demo5674451.mockable.io/product").success(function (response) {
+		// 	$scope.products = response.products;
+		// 	$scope.product = response.products.filter(function(item){
+		// 	return item.id == $scope.id
+		// 	});
+		// });
+
+		RightsideService.downloadProducts().then(function (data) {
+			$scope.products = data.data.products;
+		});
+	});
+
+
+	// // app.controller('CartController', function($scope, CartService){
+	// // 	var products = []  zabrać produkty z kategorii (są w api)
+	
+
+	// 	//$scope.addToCart = CartService.addItem(product); //dodawanie koszyka 
+	// 	$scope.addToCart = function(product) {
+
+	// 		var item = {
+	// 			id: product.id,
+	// 			price: product.price
+	// 		};
+
+	// 		CartService.addItem(item);
+	// 	};
+	// });	
 	
 	app.service('CartService', function(){
 		var items = [];
