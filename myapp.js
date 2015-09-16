@@ -46,7 +46,7 @@
 
 	});
 
-	//Rout - nie działa
+	//Rout
 	app.config(function($routeProvider){
 		$routeProvider
 		.when('/', {
@@ -72,6 +72,10 @@
 		.when('/login', {
 			templateUrl: 'mainpage.html',
 			controller: 'StoreController'
+		})
+		.when('/admin', {
+			templateUrl: 'admin.html',
+			controller: 'AdminController'
 		});
 	});
 
@@ -300,6 +304,14 @@
 			});
 		};
 	});
-})();
+
+	app.controller('AdminController', function($scope, $http) {
+		$scope.insertdata = function() {
+			$http.post("http://demo5674451.mockable.io/admin", ($scope.product.id, $scope.product.name, $scope.product.description, $scope.product.img, $scope.product.price)).success(function(data, status, headers, config) {
+				console.log('Pomyślne dodano nowy produkt');
+			});
+		};
+	});
+})();  
 
 
