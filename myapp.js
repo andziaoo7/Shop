@@ -174,7 +174,7 @@
 
 	app.service('RightsideService', function($http) {
 		this.downloadProducts = function() {
-			return $http.get("https://demo5674451.mockable.io/product");
+			return $http.get("http://demo5674451.mockable.io/product");
 		};
 	});
 
@@ -264,10 +264,42 @@
 
 	});
 	
+	// app.service('CartService', function($scope, items) {
+	// 	$scope.items = items;
+	// 	$scope.cart = [];
+
+	// 	$scope.deleteItem = function(item) {
+	// 		var cart = $scope.cart;
+	// 		var match = getMatchedCartItem(item);
+	// 		if(match.count > 1) {
+	// 			match.count -= 1;
+	// 			return;
+	// 		}
+	// 		cart.splice(cart.indexOf(item), 1);
+	// 	}
+
+	// 	$scope.addItem = function(item) {
+	// 		var match = getMatchedCartItem(item);
+	// 		if(match) {
+	// 			match.count += 1;
+	// 			return;
+	// 		}
+	// 		var itemToAdd = angular.copy(item);
+	// 		itemToAdd.count = 1;
+	// 	}
+	// 	function getMatchedCartItem(item) {
+	// 		return $scope.cart.find(function(product) {
+	// 			return product.id === item.id
+	// 		});
+	// 	}
+
+
+	// });
+
 
 	app.controller('CustomerController', function($scope, $location, $rootScope) {
 		$scope.products = users;
-		$scope.login = false;
+		$scope.login = true;
 		var users = [
 			{
 				name: 'Aneta',

@@ -6,5 +6,23 @@
 	<h3><strong>Cena: </strong>{{ product[0].price | currency }}</h3>
 </div>
 <div id="price">
-	<button><a href="/#cart"><img src="images/add to cart button.png"></img></a></button>
+	<button ng-click="addItem(item)"><img src="images/add to cart button.png"></img></button>
 </div>
+
+<!-- <div ng-app="app" ng-controller="ctrl">
+  <ul>
+    <li ng-repeat="item in items.data" id="item{{item.id}}">
+      <a href="#">{{item.title}}</a> 
+      <img ng-src="{{ item.image }}" />
+      <button ng-click="addItem(item)">Add Me</button>
+    </li>
+  </ul>
+  <p>Cart:</p>
+  <ul>
+    <li ng-repeat="item in cart">
+      <a href="#">{{item.title}} | Count: {{item.count}}</a> 
+      <a ng-click="deleteItem(item)" class="delete-item">X</a>
+
+    </li>
+  </ul>
+</div> -->
