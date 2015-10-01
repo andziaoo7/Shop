@@ -76,6 +76,10 @@
 		.when('/admin', {
 			templateUrl: 'admin.html',
 			controller: 'AdminController'
+		})
+		.when('/search', {
+			templateUrl: 'search-panel.html'
+			controller: 'SearchPanelController'
 		});
 	});
 
