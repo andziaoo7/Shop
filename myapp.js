@@ -79,7 +79,7 @@
 		})
 		.when('/search', {
 			templateUrl: 'search-panel.html'
-			controller: 'SearchPanelController'
+			// controller: 'RightsideController'
 		});
 	});
 
