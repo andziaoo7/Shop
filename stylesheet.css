@@ -125,6 +125,8 @@ nav li:hover a {
 	box-sizining: border-box;
 	text-align: center;
 	background-color: #66cdaa;
+	border
+
 }
 .popup-position {
 	position: fixed;
@@ -177,7 +179,6 @@ nav li:hover a {
 	width: 100%;
 	text-align: center;
 	border-top: solid 1px;
-	border-bottom: solid 1px;
 	border-color: #404040;
 	background-color: #ffb733;
 	margin-bottom: 0;

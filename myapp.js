@@ -57,10 +57,6 @@
 			templateUrl: 'category.html',
 			controller: 'RightsideController'
 		})
-		// .when('/category', {
-		// 	templateUrl: 'category2.html',
-		// 	controller: 'CategoryController'
-		// })
 		.when('/product/:id', {
 			templateUrl: 'products.html',
 			controller: 'RightsideController'
@@ -78,8 +74,8 @@
 			controller: 'AdminController'
 		})
 		.when('/search', {
-			templateUrl: 'search-panel.html'
-			// controller: 'RightsideController'
+			templateUrl: 'search-panel.html',
+			controller: 'StoreController'
 		});
 	});
 
@@ -348,6 +344,21 @@
 			});
 		};
 	});
+
+	app.service('SearchPanelService', function($http) {
+		this.getData = function() {
+			return $http.get("http://demo5674451.mockable.io/searchpanel");
+		};
+	});
+
+	app.controller('SearchPanelController', function($scope, $routeParams, $http, SearchPanelService) {
+		SearchPanelService.downloadData().then(function (data) {
+			$scope.data = data.data.products;
+		});
+	});
+
+
+
 })();  
 
 

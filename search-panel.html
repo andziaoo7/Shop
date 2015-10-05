@@ -1,4 +1,4 @@
-<div id="cse">
+<div id="cse" ng-controller="StoreController">
     <script>
       (function() {
         var cx = '005170073531244001680:l7l4mlzvw0y';
@@ -13,3 +13,25 @@
     </script>
     <gcse:search></gcse:search>
 </div>
+
+
+
+<!-- google search bar
+ng-click (zrobić geta z servica i załadować obrazki po wpisaniu w wyszukiwarkę słowa klucz)
+
+url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y:omuauf_lfve&amp;q=kitten&amp;callback=hndlr'
+parameters = {
+    "q": "kitten",
+    "cx": cx,
+    "key": key
+}
+
+
+key = 'AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU'
+cx = '005170073531244001680:l7l4mlzvw0y'
+q = kitten
+json/api url with specific pictures = 
+
+key- google search key
+cx-custom search id 
+q- search term -->
