@@ -1,37 +1,13 @@
-<div id="cse" ng-controller="StoreController">
-    <script>
-      (function() {
-        var cx = '005170073531244001680:l7l4mlzvw0y';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>
+<div class="search_panel" ng-controller="SearchPanelController">
+    <form>
+        <div class="search_bar">
+            <input type="text" ng-model="data.items"></input>
+            <button type="button">
+                <a ng-click="search_btn()">Szukaj</a>
+            </button>
+        </div>
+        <div class="search_result" ng-repeat="image in images">
+            <img class="search_image" ng-src="{{image.link}}"></img>
+        </div>
+    </form>
 </div>
-
-
-
-<!-- google search bar
-ng-click (zrobić geta z servica i załadować obrazki po wpisaniu w wyszukiwarkę słowa klucz)
-
-url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y:omuauf_lfve&amp;q=kitten&amp;callback=hndlr'
-parameters = {
-    "q": "kitten",
-    "cx": cx,
-    "key": key
-}
-
-
-key = 'AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU'
-cx = '005170073531244001680:l7l4mlzvw0y'
-q = kitten
-json/api url with specific pictures = 
-
-key- google search key
-cx-custom search id 
-q- search term -->

@@ -75,7 +75,7 @@
 		})
 		.when('/search', {
 			templateUrl: 'search-panel.html',
-			controller: 'StoreController'
+			controller: 'SearchPanelController'
 		});
 	});
 
@@ -345,20 +345,19 @@
 		};
 	});
 
-	app.service('SearchPanelService', function($http) {
-		this.getData = function() {
-			return $http.get("http://demo5674451.mockable.io/searchpanel");
+	
+	app.controller('SearchPanelController', function($scope, $http) {
+		$scope.images = [];
+		$scope.search_btn = function(){
+			return $http.get("search-file.json").success(function (data) {
+				$scope.images = data.items;
+			});
 		};
-	});
-
-	app.controller('SearchPanelController', function($scope, $routeParams, $http, SearchPanelService) {
-		SearchPanelService.downloadData().then(function (data) {
-			$scope.data = data.data.products;
-		});
 	});
 
 
 
 })();  
 
+// https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten
 

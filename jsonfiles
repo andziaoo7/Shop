@@ -17,3 +17,5 @@ app.service('RightsideService', function($http, $q) {
 		// 	return deferred.promise;
 		// }
 	});
+
+
