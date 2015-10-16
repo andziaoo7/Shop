@@ -156,7 +156,6 @@ nav li:hover a {
 	background-color: rgba(0, 0, 0, 0.3);
 	border-bottom-right-radius: 15px;
 	width: 70%;
-
 }
 .popup-position {
 	position: fixed;

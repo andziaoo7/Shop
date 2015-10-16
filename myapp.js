@@ -354,7 +354,7 @@
 			});
 		};
 		$scope.previous_page = function(){
-			return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&start=10&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten").success(function (data) {
+			return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten").success(function (data) {
 				$scope.images = data.items;
 			});
 		};
@@ -365,10 +365,5 @@
 		};
 	});
 
-
-
 })();  
 
-// https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&start=20&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten
-
-// search-file.json

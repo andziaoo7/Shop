@@ -12,10 +12,6 @@ app.service('RightsideService', function($http, $q) {
 				return data.products;
 			});
 		};
-		
-		// this.getProduct = function() {
-		// 	return deferred.promise;
-		// }
 	});
 
 
