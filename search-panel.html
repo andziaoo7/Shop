@@ -1,13 +1,14 @@
 <div class="search_panel" ng-controller="SearchPanelController">
     <form>
         <div class="search_bar">
-            <input type="text" ng-model="data.items"></input>
+            <input type="text" ng-model="haslo"></input>
             <button type="button">
                 <a ng-click="search_btn()">Szukaj</a>
             </button>
         </div>
         <div class="search_result" ng-repeat="image in images">
-            <img class="search_image" ng-src="{{image.link}}"></img>
+            <img class="search_image" ng-src="{{image.link}}"><a href="{{image.link}}" target="_blank"/></img>
+            <div id="image_shadow"></div> 
         </div>
         <div class="switch_page" ng-model="data.items">
             <button type="button" class="previous_page">

@@ -348,18 +348,24 @@
 	
 	app.controller('SearchPanelController', function($scope, $http) {
 		$scope.images = [];
+		// $scope.search_btn = function(){
+		// 	return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.pl&lr=lang_pl&num=8&start=1&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q="+ $scope.haslo+'"').success(function (data) {
+		// 		$scope.images = data.items;
+		// 	});
+		// };
+		// $scope.previous_page = function(){
+		// 	return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.pl&lr=lang_pl&num=8&start=9&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q="+ $scope.haslo+'"').success(function (data) {
+		// 		$scope.images = data.items;
+		// 	});
+		// };
+		// $scope.next_page = function(){
+		// 	return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.pl&lr=lang_pl&num=8&start=20&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q="+ $scope.haslo+'"').success(function (data) {
+		// 		$scope.images = data.items;
+		// 	});
+		// };
+		//zamiast niedziałającego API:
 		$scope.search_btn = function(){
-			return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten").success(function (data) {
-				$scope.images = data.items;
-			});
-		};
-		$scope.previous_page = function(){
-			return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten").success(function (data) {
-				$scope.images = data.items;
-			});
-		};
-		$scope.next_page = function(){
-			return $http.get("https://www.googleapis.com/customsearch/v1?googlehost=google.co.uk&safe=medium&searchType=image&start=20&key=AIzaSyCOnaiRZtq2zfeTQGAdrFDREUciHckJ3mU&cx=005170073531244001680:l7l4mlzvw0y&q=kitten").success(function (data) {
+			return $http.get("search-file.json").success(function (data) {
 				$scope.images = data.items;
 			});
 		};
